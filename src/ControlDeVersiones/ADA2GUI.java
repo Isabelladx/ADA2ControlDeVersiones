@@ -7,9 +7,12 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.util.Stack;
 import java.awt.Color;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class ADA2GUI extends JFrame {
 
@@ -18,6 +21,7 @@ public class ADA2GUI extends JFrame {
 	private JTextField txtProducto;
 	private JTextField txtCantidad;
 	private JTextField txtPrecio;
+	private Stack<String> pilaProductos = new Stack<>();
 
 	/**
 	 * Launch the application.
@@ -84,6 +88,13 @@ public class ADA2GUI extends JFrame {
 		contentPane.add(txtPrecio);
 		
 		JButton btnNewButton = new JButton("Agregar");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String producto = txtProducto.getText();
+				String cantidad = txtCantidad.getText();
+				String precio = txtPrecio.getText();
+				}
+		});
 		btnNewButton.setBackground(new Color(255, 204, 255));
 		btnNewButton.setForeground(Color.BLACK);
 		btnNewButton.setFont(new Font("Arial Black", Font.PLAIN, 14));
