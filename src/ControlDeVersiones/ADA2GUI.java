@@ -93,6 +93,10 @@ public class ADA2GUI extends JFrame {
 				String producto = txtProducto.getText();
 				String cantidad = txtCantidad.getText();
 				String precio = txtPrecio.getText();
+				pilaProductos.push(producto);
+				pilaProductos.push(cantidad);
+				pilaProductos.push(precio);
+				System.out.println("Producto: " + producto + "\nCantidad: " + cantidad + "\nPrecio: " + precio);
 				}
 		});
 		btnNewButton.setBackground(new Color(255, 204, 255));
