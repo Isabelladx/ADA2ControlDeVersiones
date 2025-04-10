@@ -83,8 +83,11 @@ public class ADA2GUI extends JFrame {
 		txtPrecio.setBounds(189, 175, 235, 20);
 		contentPane.add(txtPrecio);
 		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.setBounds(227, 220, 89, 23);
+		JButton btnNewButton = new JButton("Agregar");
+		btnNewButton.setBackground(new Color(255, 204, 255));
+		btnNewButton.setForeground(Color.BLACK);
+		btnNewButton.setFont(new Font("Arial Black", Font.PLAIN, 14));
+		btnNewButton.setBounds(71, 229, 143, 23);
 		contentPane.add(btnNewButton);
 	}
 }
