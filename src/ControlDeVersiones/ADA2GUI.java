@@ -104,5 +104,17 @@ public class ADA2GUI extends JFrame {
 		btnNewButton.setFont(new Font("Arial Black", Font.PLAIN, 14));
 		btnNewButton.setBounds(71, 229, 143, 23);
 		contentPane.add(btnNewButton);
+		
+		JButton btnEliminar = new JButton("Eliminar");
+		btnEliminar.addActionListener(new ActionListener() {
+			public void actionPerfomed(ActionEvent e) {
+		}
+		});
+		btnEliminar.setForeground(Color.BLACK);
+		btnEliminar.setFont(new Font("Arial Black", Font.PLAIN, 14));
+		btnEliminar.setBackground(new Color(153, 255, 255));
+		btnEliminar.setBounds(295, 231, 143, 23);
+		contentPane.add(btnEliminar);
+			
 	}
 }
