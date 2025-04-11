@@ -108,18 +108,16 @@ public class ADA2GUI extends JFrame {
 		JButton btnEliminar = new JButton("Eliminar");
 		btnEliminar.addActionListener(new ActionListener() {
 			public void actionPerfomed(ActionEvent e) {
-			if (!pilaProductos.empty() && !pilaCantidades.empty() && !pilaPrecio.empty()) {	
+			if (!pilaProductos.empty() && !pilaCantidades.empty() && !pilaPrecios.empty()) {	
 				String ProductoEliminado = pilaProductos.pop();
 				String CantidadEliminada = pilaCantidades.pop();
 				String PrecioEliminado = pilaPrecios.pop();
 				
+				System.out.println("Producto eliminado:" + ProductoEliminado + "\nCantidad vacia:" + CantidadEliminada + "\nPrecioEliminado:" + PrecioEliminado);
+				
+			}else {System.out.println("No hay elementos para eliminar");
+				}
 			}
-				
-				
-				
-				
-				
-		}
 		});
 		btnEliminar.setForeground(Color.BLACK);
 		btnEliminar.setFont(new Font("Arial Black", Font.PLAIN, 14));
