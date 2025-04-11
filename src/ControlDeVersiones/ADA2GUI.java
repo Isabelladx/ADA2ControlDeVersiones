@@ -108,6 +108,17 @@ public class ADA2GUI extends JFrame {
 		JButton btnEliminar = new JButton("Eliminar");
 		btnEliminar.addActionListener(new ActionListener() {
 			public void actionPerfomed(ActionEvent e) {
+			if (!pilaProductos.empty() && !pilaCantidades.empty() && !pilaPrecio.empty()) {	
+				String ProductoEliminado = pilaProductos.pop();
+				String CantidadEliminada = pilaCantidades.pop();
+				String PrecioEliminado = pilaPrecios.pop();
+				
+			}
+				
+				
+				
+				
+				
 		}
 		});
 		btnEliminar.setForeground(Color.BLACK);
